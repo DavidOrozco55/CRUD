@@ -1,0 +1,9 @@
+nav *{
+    font: 1.2em bold;
+    color: burlywood;
+}
+
+nav{
+    background: white;
+    position: relative;
+}

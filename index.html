@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CRUD</title>
+
+    <link rel="stylesheet" href="css/form.css">
+
+</head>
+<body>
+
+    <div id="principal">
+
+        <div id="peliculas">
+            <img src="img/movie.png">
+            <p>Peliculas</p>
+        </div>
+
+        <div id="discos">
+            <img src="img/disk.png">
+            <p>Discos</p>
+
+        </div>
+
+        <div id="estudios">
+            <img src="img/movie.png">
+            <p>Estudios</p>
+        </div>
+
+        <input id="btnCerrarSesion" type="button" value="Cerrar sesión">
+
+    </div>
+    
+    <script>
+    
+        var divPeliculas = document.getElementById("peliculas");
+        var divEstudios = document.getElementById("estudios");
+        var divDiscos = document.getElementById("discos");
+        var btnCerrarSesion = document.getElementById("btnCerrarSesion");
+        
+        divPeliculas.addEventListener("click",(event)=>{
+            window.location.replace("peliculas.php");
+        })
+
+        divEstudios.addEventListener("click",(event)=>{
+            window.location.replace("estudios.php");
+        })
+
+        divDiscos.addEventListener("click",(event)=>{
+            window.location.replace("discos.php");
+        })
+
+        btnCerrarSesion.addEventListener("click", (event)=>{
+            window.location.replace("inicioSesion.php");
+        })
+
+    </script>
+</body>
+</html>
